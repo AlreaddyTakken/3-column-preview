@@ -18,8 +18,8 @@
 .contenedor-main{
     display: flex;
     justify-content: center;
-    align-items: stretch;
-    text-align: center;
+    flex-wrap: wrap;
+    padding-top: 3.75rem;
 }
 
 .contenedor-main h2{
@@ -38,18 +38,131 @@
     width: 18rem;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+    grid-template-areas: 
+    "icono icono icono"
+    "titulo titulo titulo"
+    "parrafo parrafo parrafo"
+    "button button button";
+    padding: 40px;
+}
+
+
+.titulo-sedans{
+    grid-area: titulo;
+    color: var(--gris-claro);
+}
+
+.texto-info-sedans{
+    grid-area: parrafo;
+    color: var(--parrafos);
+    font-size: var(--tamano-fuente);
+    font-weight: 300;
+}
+
+.icono-info{
+    grid-area: icono;
+}
+
+.button-sedans, .button-suv, .button-luxury{
+    border-radius: 2.5rem;
+    font-style: var(--fuente-parrafo);
+    height: 2.5rem;
+    width: 7.5rem;
+    background-color: var(--gris-claro);
+    font-weight: bold;
+    font-style: var(--fuente-parrafo);
+    border-style: none;
+    mix-blend-mode: screen;
+}
+
+.button-sedans:hover{
+    background-color: transparent;
+    border-style: solid;
+    border-color: var(--gris-claro);
+    color: var(--gris-claro);
+    cursor: pointer;
+}
+
+.button-suv:hover{
+    background-color: transparent;
+    border-style: solid;
+    border-color: var(--gris-claro);
+    color: var(--gris-claro);
+    cursor: pointer;
+}
+
+.button-luxury:hover{
+    background-color: transparent;
+    border-style: solid;
+    border-color: var(--gris-claro);
+    color: var(--gris-claro);
+    cursor: pointer;
 }
 
 .suvs{
     background-color: var(--cyan);
-    height: 440px;
+    height: 27.5rem;
     width: 18rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+    grid-template-areas: 
+    "icono2 icono2 icono2"
+    "titulo2 titulo2 titulo2"
+    "parrafo2 parrafo2 parrafo2"
+    "button2 button2 button2";
+    padding: 40px;
 }
+
+.icono-info2{
+    grid-area: icono2;
+}
+
+.titulo-suvs{
+    grid-area: titulo2;
+    color: var(--gris-claro);
+}
+
+.texto-info-suvs{
+    grid-area: parrafo2;
+    color: var(--parrafos);
+    font-size: var(--tamano-fuente);
+    font-weight: 300;
+}
+
 
 .luxury{
     background-color: var(--cyan-oscuro);
-    height: 440px;
+    height: 27.5rem;
     width: 18rem;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+    grid-template-areas: 
+    "icono3 icono3 icono3"
+    "titulo3 titulo3 titulo3"
+    "parrafo3 parrafo3 parrafo3"
+    "button3 button3 button3";
+    padding: 40px;
+}
+
+.icono-info3{
+    grid-area: icono3;
+}
+
+.titulo-luxury{
+    grid-area: titulo3;
+    color: var(--gris-claro);
+}
+
+.texto-info-luxury{
+    grid-area: parrafo3;
+    color: var(--parrafos);
+    font-size: var(--tamano-fuente);
+    font-weight: 300;
 }
