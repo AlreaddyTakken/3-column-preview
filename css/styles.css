@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --naranjo:hsl(31, 77%, 52%);
+    --cyan:hsl(184, 100%, 22%);
+    --cyan-oscuro:hsl(179, 100%, 13%);
+    --parrafos:hsla(0, 0%, 100%, 0.75);
+    --gris-claro:hsl(0, 0%, 95%);
+    --tamano-fuente: 15px;
+    --fuente-parrafo:"Lexend Deca";
+    --fuente-titulo:"Big Shoulders Display";
+}
+
+.contenedor-main{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+}
+
+.contenedor-main h2{
+    font-family: var(--fuente-titulo);
+    text-transform: uppercase;
+}
+
+.contenedor-main p{
+    font-family: var(--fuente-parrafo);
+    font-size: var(--tamano-fuente);
+}
+
+.sedan{
+    background-color: var(--naranjo);
+    height: 27.5rem;
+    width: 18rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.suvs{
+    background-color: var(--cyan);
+    height: 440px;
+    width: 18rem;
+}
+
+.luxury{
+    background-color: var(--cyan-oscuro);
+    height: 440px;
+    width: 18rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
