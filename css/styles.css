@@ -166,3 +166,10 @@
     font-size: var(--tamano-fuente);
     font-weight: 300;
 }
+
+@media (max-width: 325px) {
+    .contenedor-main{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
