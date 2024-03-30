@@ -167,9 +167,19 @@
     font-weight: 300;
 }
 
-@media (max-width: 325px) {
+@media (max-width: 475px){
     .contenedor-main{
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
+    }
+
+    .sedan{
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .luxury{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
     }
 }
